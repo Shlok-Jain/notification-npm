@@ -1,5 +1,3 @@
-var sound = new Audio('https://cdn.jsdelivr.net/gh/Shlok-Jain/Notification-library@latest/notification.mp3')
-
 class NotificationJS {
 
     constructor(json) {
@@ -75,7 +73,8 @@ class NotificationJS {
         // notification_library_list.push(this.div)
     }
     show() {
-        if(this.json.sound){
+        if (this.json.sound) {
+            var sound = new Audio('https://cdn.jsdelivr.net/gh/Shlok-Jain/Notification-library@latest/notification.mp3')
             sound.play();
         }
 
@@ -83,13 +82,13 @@ class NotificationJS {
         this.loader.style.animation = `loader linear forwards ${this.json.duration}ms`
 
 
-        window.addEventListener("focus", (event)=> {
+        window.addEventListener("focus", (event) => {
             this.loader.style.animationPlayState = 'running'
         }, false);
-        
-        window.addEventListener("blur", (event)=> {
+
+        window.addEventListener("blur", (event) => {
             this.loader.style.animationPlayState = 'paused'
-          }, false);
+        }, false);
 
         //swipe
         var ini_x
@@ -129,9 +128,9 @@ class NotificationJS {
             setTimeout(() => {
                 this.loader.style.animation = ""
                 this.div.remove()
-             }, 325)
+            }, 325)
         })
-        
+
     }
     hide() {
         this.div.style.animation = "hide 325ms forwards"
@@ -141,3 +140,5 @@ class NotificationJS {
         }, 325)
     }
 }
+
+module.exports = NotificationJS

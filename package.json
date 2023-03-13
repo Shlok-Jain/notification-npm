@@ -1,0 +1,24 @@
+{
+  "name": "notification-npm",
+  "version": "1.0.0",
+  "description": "This is a javascript library for showing notifications in javascript apps, React apps and many more..... It has many features like swipe for touch devices, light and dark themes, four templates for different notifications( normal, alert, error, success), compatible on all major devices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shlok-Jain/notification-npm.git"
+  },
+  "keywords": [
+    "notification",
+    "toast",
+    "snackbar"
+  ],
+  "author": "Shlok Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shlok-Jain/notification-npm/issues"
+  },
+  "homepage": "https://github.com/Shlok-Jain/notification-npm#readme"
+}
