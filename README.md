@@ -30,6 +30,12 @@ https://shlok-jain.github.io/Notification-library#demo
 
 ## Installation
 
+Install NotificationJS with npm
+
+```bash
+npm i notification-npm
+```
+
 Install NotificationJS with cdn
 
 ```html
@@ -39,5 +45,27 @@ Install NotificationJS with cdn
     
 ## Usage
 
-[Documentation](https://shlok-jain.github.io/Notification-library/#usage)
+Basic Usage
+```javascript
+import React from 'react'
+import NotificationJS from 'notification-npm'
+import '/node_modules/notification-npm/index.css'
+
+export const Component = () => {
+    const shownotification = ()=>{
+        const notification = new NotificationJS({
+            message: 'This is a normal notificaion',  //specify message here
+            type: 'normal',                          //specify type of notification
+            duration: 5000,                          //duration in milliseconds
+            theme: 'dark',                           //theme of notification
+            sound: true                              //for notificaion sound
+        })
+
+        notification.show()
+  }
+
+  return(<button onClick={()=>shownotification()}></button>)
+}
+```
+[Click here to see more](https://shlok-jain.github.io/Notification-library/#usage)
 

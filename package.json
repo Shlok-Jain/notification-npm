@@ -1,6 +1,6 @@
 {
   "name": "notification-npm",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "This is a javascript library for showing notifications in javascript apps, React apps and many more..... It has many features like swipe for touch devices, light and dark themes, four templates for different notifications( normal, alert, error, success), compatible on all major devices.",
   "main": "index.js",
   "scripts": {
