@@ -13,9 +13,9 @@ This is a javascript library for showing notifications in javascript apps, React
 
 ## Demo
 
-https://shlok-jain.github.io/Notification-library#demo
+Playground - https://shlok-jain.github.io/Notification-library#demo
 
-![demo](https://i.postimg.cc/qgHzTXSW/Screenshot-2023-03-03-180536.png)
+![demo](https://i.postimg.cc/vHHRDJnw/Screenshot-2023-03-25-122826.png)
 
 
 ## Features
@@ -23,6 +23,7 @@ https://shlok-jain.github.io/Notification-library#demo
 - Swipe to close on touch devices
 - You can choose from two themes(light,dark)
 - Pause timer when window loses focus
+- Close Button for closing notification
 - Different types of notifications for different type of messages( normal, alert, error, success )
 - You can manually close notification( .hide() method)hover on notification to pause timer
 - You can specify time to show notification
