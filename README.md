@@ -59,7 +59,8 @@ export const Component = () => {
             type: 'normal',                          //specify type of notification
             duration: 5000,                          //duration in milliseconds
             theme: 'dark',                           //theme of notification
-            sound: true                              //for notificaion sound
+            sound: true,                             //for notificaion sound
+            disable_timer:false,                     //set it true of you don't want timer
         })
 
         notification.show()
